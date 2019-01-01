@@ -7,6 +7,7 @@ class Layout extends React.Component {
   render() {
     const { location, title, children } = this.props
     const rootPath = `${__PATH_PREFIX__}/`
+    const thisYear = new Date().getFullYear()
     let header
 
     if (location.pathname === rootPath) {
@@ -23,6 +24,7 @@ class Layout extends React.Component {
               boxShadow: `none`,
               textDecoration: `none`,
               color: `inherit`,
+              backgroundImage: 'none'
             }}
             to={`/`}
           >
@@ -34,6 +36,8 @@ class Layout extends React.Component {
       header = (
         <h3
           style={{
+            textAlign: 'right',
+            color: '#ff483b',
             fontFamily: `Montserrat, sans-serif`,
             marginTop: 0,
             marginBottom: rhythm(-1),
@@ -43,7 +47,8 @@ class Layout extends React.Component {
             style={{
               boxShadow: `none`,
               textDecoration: `none`,
-              color: `inherit`,
+              // color: `inherit`,
+              backgroundImage: 'none'
             }}
             to={`/`}
           >
@@ -64,7 +69,7 @@ class Layout extends React.Component {
         {header}
         {children}
         <footer>
-          © 2018, Made with 🖤 and cayenne pepper.
+           {`© ${thisYear}, Made with 🖤 and cayenne pepper.`}
         </footer>
       </div>
     )

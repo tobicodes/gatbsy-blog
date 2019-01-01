@@ -9,20 +9,10 @@ import { rhythm } from '../utils/typography'
 
 class BlogIndex extends React.Component {
   render() {
-    debugger
-    const { data } = this.props
-    // const siteTitle = data.site.siteMetadata.title
+    
     const siteTitle = get(this, 'props.data.site.siteMetadata.title')
     const siteDescription = get(this, 'props.data.site.siteMetadata.description')
-    // const posts = get(data.allMarkdownRemark.edges)
     const posts = get(this, 'props.data.allMarkdownRemark.edges', [])
-
-    // const siteTitle = get(this, 'props.data.site.siteMetadata.title')
-    // const siteDescription = get(
-    //   this,
-    //   'props.data.site.siteMetadata.description'
-    // )
-    // const posts = get(this, 'props.data.allMarkdownRemark.edges')
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
@@ -35,6 +25,8 @@ class BlogIndex extends React.Component {
           // TODO - get synopsis and category
           const title = node.frontmatter.title.toLowerCase() || node.fields.slug
           const synopsis = get(node, 'frontmatter.synopsis')
+          const readingTime = get(node, 'fields.readingTime.text')
+          
           return (
             <div key={node.fields.slug}>
               <h3
@@ -45,11 +37,13 @@ class BlogIndex extends React.Component {
                 <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
                   {title}
                 </Link>
+                
               </h3>
-              <small>{node.frontmatter.date}</small>
+              <small>{node.frontmatter.date}</small> 
+               ----------- 
+              <small> {`(${readingTime})`} </small>
               <p>{synopsis}</p>
               {/* <p dangerouslySetInnerHTML={{ __html: node.excerpt }} /> */}
-              {/* <p dangerouslySetInnerHTML={{ __html: synopsis }} /> */}
             </div>
           )
         })}
