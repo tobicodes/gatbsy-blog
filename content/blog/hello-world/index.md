@@ -1,5 +1,5 @@
 ---
-title: Hello World
+title: the promise
 date: '2015-05-01T22:12:03.284Z'
 synopsis: 'A single line statement that introduces the topic'
 ---

@@ -1,21 +1,28 @@
 ---
-title: the masquerade of choice
-date: '2018-12-30'
-synopsis: 'Apps give you the ability to make many small choices every day. But who decides the options you get to choose from? And what drives those decisions?'
-category: 'hola'
+title: how tech can bounce back in 2019
+date: '2018-12-29'
+synopsis: "It's been a rough year for the tech industry - privacy issues, security hacks, plummeting stock prices, congressional hearings etc. And that's just Facebook lol. Here are some ideas for how the industry can bounce back next year"
 ---
+1. Stop pretending be our saviors when you want our $. 
+There's nothing wrong being a business that does X for $. Businesses that do this provide employment for X, pay taxes for Y, people derive identitiy and meaning from these. 
 
-I would love it if I could ask Pinterest exactly why it thought I was interested in something, and fix those assumptions if they are incorrect.
+How is this mission selling stuff relevant? Well, frankly the bar is set higher when you want people to love your products and use them all the time. And when you want to put 
 
-the above applies to any 
 
-Consumers never see the assumptions. But we see the results. The assumptions, the modelling, the guesses, the judgement, the nuance. All of that is hidden behind a seemingly innocent box, a div, a little square not so much pretending as portending to be nice. "You gave us the punch without the nuance." - potential article title
+Now, I'm not suggesting that we don't dream big or aim to solve impossible problems. 
 
-____________
+I'm saying that if your company is doing just X, please don't sell it as a platform connecting the world. 
 
-Let's envision a thought experiment. 
+2. Don't release things to kids when you're not comfortable with your own kids using them. 
 
-If I got a lab rat, and I carefully exploited its biology (giving it little sugar snacks when it did something I liked; and xyz when it didn't). 
+2. We need to teach people how to evaluate information on the internet. E.g. Goop (a harmful "wellness" brand that recommends people put hot coal into their genitals) became famous because she partially tapped into a void. 
+
+3. Reevaluate your premises - does your mission have an objective positive income for its users? 
+
+4. Data breaches - we haven't seen the last data breach of our lifetime. So, we need to get ready for how to deal with this madness. 
+
+5. Regulation - GDPR came in this year in Europe. But we need personal accountability for the . If you can take the $$$ and adulation when things are going great, you can take some flak when times are hard. 
+
 
 technology by itself is probably neutral. But like any other tool, its impact is determined by the will of its wielders. 
 

@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link, graphql } from 'gatsby'
 import get from 'lodash/get'
+import { Divider } from 'antd'
 
 import Bio from '../components/Bio'
 import Layout from '../components/Layout'
@@ -35,13 +36,12 @@ class BlogIndex extends React.Component {
                 }}
               >
                 <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
-                  {title}
+                  {title} 
                 </Link>
+                {/* <code>test</code> */}
                 
               </h3>
-              <small>{node.frontmatter.date}</small> 
-               ----------- 
-              <small> {`(${readingTime})`} </small>
+              <small>{node.frontmatter.date} | {`(${readingTime})`} </small> 
               <p>{synopsis}</p>
               {/* <p dangerouslySetInnerHTML={{ __html: node.excerpt }} /> */}
             </div>

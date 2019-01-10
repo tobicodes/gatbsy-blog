@@ -1,7 +1,7 @@
 ---
-title: new beginnings
+title: what's great about tech?
 date: '2015-05-28'
-synopsis: 'A single line statement that introduces the topic'
+synopsis: "Sorry, but you have to do more to convince me. One night's worth of Youtube binging does not constitute evidence"
 category: 'hola'
 ---
 
