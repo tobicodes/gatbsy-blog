@@ -2,7 +2,6 @@
 title: the masquerade of choice
 date: '2018-12-30'
 synopsis: 'Apps give you the ability to make many small choices every day. But who decides the options you get to choose from? And what drives those decisions?'
-category: 'hola'
 ---
 
 I would love it if I could ask Pinterest exactly why it thought I was interested in something, and fix those assumptions if they are incorrect.
