@@ -1,7 +1,7 @@
 ---
 title: why technology is not the answer to everything
 date: '2015-05-01T22:12:03.284Z'
-synopsis: 'I know you think it's heretical for an engineer to say this.'
+synopsis: I know you think it's heretical for an engineer to say this.
 ---
 
 This is my first post on my new fake blog! How exciting!

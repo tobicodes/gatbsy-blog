@@ -1,7 +1,7 @@
 ---
 title: a chemical engineer's take on Silicon Valley culture
 date: '2015-05-06'
-synopsis: 'the good, the bad and the ugly'
+synopsis: the good, the bad and the ugly
 categories: ['a', 'b']
 ---
 
