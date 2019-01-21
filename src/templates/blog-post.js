@@ -9,10 +9,11 @@ import { rhythm, scale } from '../utils/typography'
 class BlogPostTemplate extends React.Component {
   render() {
     // TODO capture categories
-    debugger
     const post = this.props.data.markdownRemark
     const siteTitle = this.props.data.site.siteMetadata.title
-    const { previous, next } = this.props.pageContext
+    const { previous, next, slug } = this.props.pageContext
+
+    // console.log("blogT", this.props)
 
     return (
       <Layout location={this.props.location} title={siteTitle}>

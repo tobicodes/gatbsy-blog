@@ -5,7 +5,6 @@ import { Icon } from 'antd'
 
 import { rhythm } from '../utils/typography'
 
-const oneLiner=null
 
 function Bio() {
   return (
@@ -13,9 +12,13 @@ function Bio() {
       query={bioQuery}
       render={data => {
         const { author, social } = data.site.siteMetadata
+        
         return (
           <div
             style={{
+              // backgroundColor: 'peachpuff',
+              // border: '1px solid peachpuff',
+              // borderRadius: '6px',
               display: `flex`,
               marginBottom: rhythm(2.5),
             }}
@@ -34,14 +37,23 @@ function Bio() {
             {/* <span style={{marginBottom: '20em'}}>cautious (sketpical) technophile. I write code and words. Sometimes, words about code too. </span> */}
             {/* <span style={{marginBottom: '20em'}}>I write words and code. Sometimes, words about code. Your favourite tech-loving, tech-building, tech critic. </span> */}
             
-            <span style={{marginBottom: '20em'}}>some words will go here</span>
+            <span style={{marginBottom: '20em'}}>former toddler. skeptical optimist. I write code and essays.</span>
+            {/* code and words */}
             <br />
             <br />
-            <span>some other words will be here</span>
+            {/* <span>I'll bring you treasures such as an optimistic outlook on tech. critical outlook on tech. ethics. designer babies. what chemical engineering even is. 
+              </span> */}
+            <span>designer babies. tech addiction. free speech. nutrition fads. Gwyneth Paltrow diets. I'm coming for you. 
+              </span>
+
+              <br />
+
+              <span>come because I guilted you to check my blog. stay for the self-deprecating humor and hopefully intelligent quips</span>
             {/* <span style={{marginBottom: '20em'}}>Writer of words and code. Your favourite tech-loving, tech critic. No, that's not hypocritical. </span>
             <span> note to self - use picture from Insta that Fiyin made of me as the profile pic for this blog </span>
             Sometimes, words about code. Your favourite tech-loving, tech-building, tech critic.  */}
 
+{/* expect commentary on the impact of tech, big issues we need to solve and random things. I promise to bring you souvenirs from my former lives (chocolate manufacturing, chemical engineering, living in the UK/ Nigeria.)  */}
             
             {/* <br />
             <br /> */}
@@ -68,8 +80,9 @@ function Bio() {
              {/* souvenir from the many wanders my brain ventures on on the interwebs. */}
             <br />            
             <br />
-            <a style={{backgroundImage: 'none'}} href={`https://twitter.com/${social.twitter}`}>
-              <Icon style={{color: 'black'}} type="twitter"></Icon>        
+            <a style={{backgroundImage: 'none'}} target='_blank' rel="noopener noreferrer" href={`https://twitter.com/${social.twitter}`}>
+              <Icon style={{color: 'moccasin'}} type="twitter"></Icon>        
+              <Icon style={{color: 'lightsalmon'}} type="twitter"></Icon>        
             </a> 
             </p>
           </div>
@@ -81,7 +94,7 @@ function Bio() {
 
 const bioQuery = graphql`
   query BioQuery {
-    avatar: file(absolutePath: { regex: "/profile-pic.jpg/" }) {
+    avatar: file(absolutePath: { regex: "/profile-pic.png/" }) {
       childImageSharp {
         fixed(width: 50, height: 50) {
           ...GatsbyImageSharpFixed
