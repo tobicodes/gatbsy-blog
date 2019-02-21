@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: `young tarantula`,
+    title: `tobi ogunnaike`,
     author: `Tobi Ogunnaike`,
     description: `I write code and words. Sometimes, I write words about code. But mostly, I yield words about technology and its impact on us.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
+    siteUrl: `https://gunzy.dev`,
     social: {
       twitter: `gunzzzy`,
     },
@@ -48,6 +48,13 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-twitter`,
+    {
+      resolve: '@weknow/gatsby-remark-twitter',
+      options: {
+        debug: true,
+      },
+    },
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {

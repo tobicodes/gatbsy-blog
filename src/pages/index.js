@@ -10,12 +10,13 @@ import { rhythm } from '../utils/typography'
 
 class BlogIndex extends React.Component {
   render() {
-    
-    // const siteTitle = get(this, 'props.data.site.siteMetadata.title')
-    // const siteTitle = 'young tarantula'
-    // const siteTitle = 'tobias'
-    const siteTitle = 'the skeptical optimist'
-    const siteDescription = get(this, 'props.data.site.siteMetadata.description')
+    // const siteTitle = 'tobi ogunnaike'
+    // const siteTitle = 'humans n tech' // TODO
+    const siteTitle = get(this, 'props.data.site.siteMetadata.title')
+    const siteDescription = get(
+      this,
+      'props.data.site.siteMetadata.description'
+    )
     const posts = get(this, 'props.data.allMarkdownRemark.edges', [])
 
     return (
@@ -30,8 +31,6 @@ class BlogIndex extends React.Component {
           const synopsis = get(node, 'frontmatter.synopsis')
           const readingTime = get(node, 'fields.readingTime.text')
 
-          console.log(node)
-          
           return (
             <div key={node.fields.slug}>
               <h3
@@ -40,12 +39,16 @@ class BlogIndex extends React.Component {
                 }}
               >
                 <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
-                  {title} 
+                  {title}
                 </Link>
               </h3>
-              <small>{node.frontmatter.date}  |  <span style={{color: 'lightsalmon'}}>{`${readingTime}`} </span></small> 
+              <small>
+                {node.frontmatter.date} |{' '}
+                <span style={{ color: 'lightsalmon' }}>
+                  {`${readingTime}`}{' '}
+                </span>
+              </small>
               <p>{synopsis}</p>
-              {/* <p dangerouslySetInnerHTML={{ __html: node.excerpt }} /> */}
             </div>
           )
         })}

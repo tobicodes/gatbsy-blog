@@ -13,13 +13,12 @@ class BlogPostTemplate extends React.Component {
     const siteTitle = this.props.data.site.siteMetadata.title
     const { previous, next, slug } = this.props.pageContext
 
-    // console.log("blogT", this.props)
-
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO title={post.frontmatter.title} description={post.excerpt} />
-        {/* <SEO title={post.frontmatter.title} description={post.excerpt} /> */}
-        <h1 style={{marginBottom: '0.8em'}}>{post.frontmatter.title.toLowerCase()}</h1>
+        <h1 style={{ marginBottom: '0.8em' }}>
+          {post.frontmatter.title.toLowerCase()}
+        </h1>
         <p
           style={{
             ...scale(-1 / 5),

@@ -10,10 +10,6 @@ class Layout extends React.Component {
     const thisYear = new Date().getFullYear()
     let header
 
-    debugger
-
-    const text = footerText()
-
     if (location.pathname === rootPath) {
       header = (
         <h1
@@ -28,7 +24,7 @@ class Layout extends React.Component {
               boxShadow: `none`,
               textDecoration: `none`,
               color: `inherit`,
-              backgroundImage: 'none'
+              backgroundImage: 'none',
             }}
             to={`/`}
           >
@@ -51,7 +47,7 @@ class Layout extends React.Component {
               boxShadow: `none`,
               textDecoration: `none`,
               color: `lightsalmon`,
-              backgroundImage: 'none'
+              backgroundImage: 'none',
             }}
             to={`/`}
           >
@@ -71,19 +67,14 @@ class Layout extends React.Component {
       >
         {header}
         {children}
-        <footer style={{textAlign: 'center'}}>
-           {text} <small>{`${thisYear}`}</small>
+        <footer style={{ textAlign: 'center' }}>
+          <small>
+            <strong>Tobi Ogunnaike </strong> | {thisYear}
+          </small>
         </footer>
       </div>
     )
   }
 }
-
-const footerText = () => (<small>
-  <strong> Tobi Ogunnaike </strong> |
-  </small>
-  )
-
-const addendum = '🖤 and cayenne pepper.'
 
 export default Layout
