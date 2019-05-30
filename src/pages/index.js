@@ -10,8 +10,6 @@ import { rhythm } from '../utils/typography'
 
 class BlogIndex extends React.Component {
   render() {
-    // const siteTitle = 'tobi ogunnaike'
-    // const siteTitle = 'humans n tech' // TODO
     const siteTitle = get(this, 'props.data.site.siteMetadata.title')
     const siteDescription = get(
       this,

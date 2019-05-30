@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `tobi ogunnaike`,
+    title: `the intersection`,
     author: `Tobi Ogunnaike`,
     description: `I write code and words. Sometimes, I write words about code. But mostly, I yield words about technology and its impact on us.`,
     siteUrl: `https://gunzy.dev`,
