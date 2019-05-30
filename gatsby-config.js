@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `the intersection`,
     author: `Tobi Ogunnaike`,
-    description: `I write code and words. Sometimes, I write words about code. But mostly, I yield words about technology and its impact on us.`,
+    description: `Technology influences your life in tremendous ways. I want to understand what it's doing to us, and what we are doing with it.`,
     siteUrl: `https://gunzy.dev`,
     social: {
       twitter: `gunzzzy`,
